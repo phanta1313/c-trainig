@@ -1,0 +1,15 @@
+C:\Users\1\source\repos\Convert to Binary\obj\Debug\Convert to Binary.csproj.AssemblyReference.cache
+C:\Users\1\source\repos\Convert to Binary\obj\Debug\MainWindow.g.cs
+C:\Users\1\source\repos\Convert to Binary\obj\Debug\App.g.cs
+C:\Users\1\source\repos\Convert to Binary\obj\Debug\Convert to Binary_MarkupCompile.cache
+C:\Users\1\source\repos\Convert to Binary\obj\Debug\Convert to Binary_MarkupCompile.lref
+C:\Users\1\source\repos\Convert to Binary\bin\Debug\Convert to Binary.exe.config
+C:\Users\1\source\repos\Convert to Binary\bin\Debug\Convert to Binary.exe
+C:\Users\1\source\repos\Convert to Binary\bin\Debug\Convert to Binary.pdb
+C:\Users\1\source\repos\Convert to Binary\obj\Debug\MainWindow.baml
+C:\Users\1\source\repos\Convert to Binary\obj\Debug\Convert to Binary.g.resources
+C:\Users\1\source\repos\Convert to Binary\obj\Debug\Convert_to_Binary.Properties.Resources.resources
+C:\Users\1\source\repos\Convert to Binary\obj\Debug\Convert to Binary.csproj.GenerateResource.cache
+C:\Users\1\source\repos\Convert to Binary\obj\Debug\Convert to Binary.csproj.CoreCompileInputs.cache
+C:\Users\1\source\repos\Convert to Binary\obj\Debug\Convert to Binary.exe
+C:\Users\1\source\repos\Convert to Binary\obj\Debug\Convert to Binary.pdb
