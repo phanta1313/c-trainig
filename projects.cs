@@ -1,12 +1,43 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using System.Text;
 
 void Main(){
     Console.WriteLine("Choose the homework: ");
     string homework = Console.ReadLine();
     switch(homework){
+        case "8":
+            Console.WriteLine($"Lab {homework} - Stacks \n");
+            break;
+        case "9":
+            Console.WriteLine($"Lab {homework} - Queues \n");
+            break;
         case "10":
+        Console.WriteLine($"Lab {homework} - BitArrays \n");
+            BitArray_10.Show();
+            break;
+        case "11":
+        Console.WriteLine($"Lab {homework} - BitArrays \n");
+            BitArray_10.Show();
+            break;
+        case "12":
+        Console.WriteLine($"Lab {homework} - BitArrays \n");
+            BitArray_10.Show();
+            break;
+        case "13":
+        Console.WriteLine($"Lab {homework} - BitArrays \n");
+            BitArray_10.Show();
+            break;
+        case "14":
+        Console.WriteLine($"Lab {homework} - BitArrays \n");
+            BitArray_10.Show();
+            break;
+        case "15":
+        Console.WriteLine($"Lab {homework} - BitArrays \n");
+            BitArray_10.Show();
+            break;
+        case "16":
         Console.WriteLine($"Lab {homework} - BitArrays \n");
             BitArray_10.Show();
             break;
@@ -16,7 +47,20 @@ void Main(){
             break;
     }
 }
+
 Main();
+
+public class Stacks_8{
+    public static void Show(){
+        
+    }
+}
+
+public class Queues_9{
+     public static void Show(){
+        
+    }
+}
 
 public class BitArray_10  {
    public static void Show()  {
