@@ -21,7 +21,7 @@ void Main()
             BitArray_10.Show();
             break;
         case "11":
-            Console.WriteLine($"Lab {homework} - BitArrays \n");
+            Console.WriteLine($"Lab {homework} - Strings \n");
             Strings_11.Show();
             break;
         case "12":
@@ -57,12 +57,13 @@ public class Stacks_8
 {
     public static void Show()
     {
+        Console.WriteLine("Create stack of strings, push 9 strings onto stack, pop the first string of stack, look at the peek element and pop it off.\n");
         Stack stack = new Stack();
-        for (int i = 0; i<=9; i++)
+        for (int i = 0; i <= 9; i++)
         {
             stack.Push($"string{i}");
         }
-        Console.WriteLine("Top removed element- "+stack.Pop());
+        Console.WriteLine("Top removed element- " + stack.Pop());
         Console.WriteLine("Top element- " + stack.Peek());
         Console.WriteLine("Top removed element- " + stack.Pop());
     }
@@ -72,7 +73,7 @@ public class Queues_9
 {
     public static void Show()
     {
-
+        Console.WriteLine("Implement radix sort using queue.");
     }
 }
 
@@ -80,29 +81,35 @@ public class BitArray_10
 {
     public static void Show()
     {
-        BitArray myBA1 = new BitArray(8, true);
-        for (int i = 0; i > myBA1.Count; i++)
-        {
-            myBA1.Set(5, false);
-        };
-        BitArray myBA2 = new BitArray(8, false);
-        for (int i = 0; i > myBA2.Count; i++)
-        {
-            myBA2.Set(5, false);
-        };
-
+        Console.WriteLine("Create two bit arrays of size 8. Store value 5 into each arrays. Find result of and or operations.");
+        byte[] myBytes1 = new byte[8] { 0,0,0,0,0,1,0,1 };
+        BitArray myBA1 = new BitArray(myBytes1);
+        byte[] myBytes2 = new byte[8] {0, 0, 0, 0, 0, 1, 0, 1 };
+        BitArray myBA2 = new BitArray(myBytes2);
+     
         BitArray and = myBA1.And(myBA2);
         BitArray or = myBA1.Or(myBA2);
         Console.WriteLine("And:");
+        string str1 = "";
+        string str2 = "";
 
-        for (int i = 0; i < myBA1.Count; i++)
+        for (int i = 0; i < myBytes1.Length; i++)
         {
-            Console.WriteLine(and.Get(i));
+           
+            
         }
+        Console.WriteLine();
         Console.WriteLine("Or:");
-        for (int i = 0; i < myBA1.Count; i++)
+        for (int i = 0; i < myBytes2.Length; i++)
         {
-            Console.WriteLine(or.Get(i));
+            if (or.Get(i))
+            {
+                Console.Write("1");
+            }
+            else
+            {
+                Console.Write("0");
+            }
         }
     }
 }
@@ -111,6 +118,7 @@ public class Strings_11
 {
     public static void Show()
     {
+        Console.WriteLine("Write a function that counts the occurances of letter in text.\n");
         string text = "hello everyone here.";
         Console.WriteLine($"Enter a letter to see its occurance in text '{text}': ");
         string letter = Console.ReadLine();
@@ -130,6 +138,8 @@ public class StringBuilder_12
 {
     public static void Show()
     {
+        Console.WriteLine("1. Write a function that takes a number, and returns it as a word.\n2. Write a function that takes a sentence and pares it into noun-verb-object form");
+        int number = 52;
 
     }
 
