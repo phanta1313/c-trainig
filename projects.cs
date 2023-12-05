@@ -27,9 +27,9 @@ void Main()
             break;
         case "11":
             Console.WriteLine($"Lab {homework} - Strings \n");
-             Console.WriteLine("Write a function that counts the occurances of letter in text.\n");
+            Console.WriteLine("Write a function that counts the occurances of letter in text.\n");
             Strings_11.Show();
-            
+
             break;
         case "12":
             Console.WriteLine($"Lab {homework} - StringBuilder \n");
@@ -45,14 +45,6 @@ void Main()
             Console.WriteLine($"Lab {homework} - LinkedList \n");
             LinkedLists_14.Show();
             break;
-        case "15":
-            Console.WriteLine($"Lab {homework} - LinkedList \n");
-            LinkedLists_15.Show();
-            break;
-        case "16":
-            Console.WriteLine($"Lab {homework} - Circularly LinkedList \n");
-            Circularly_LinkedList_16.Show();
-            break;
         default:
             Console.WriteLine("No such homework");
             Main();
@@ -66,7 +58,7 @@ public class Stacks_8
 {
     public static void Show()
     {
-        Stack stack = new Stack();
+        Stack stack = new Stack(); 
         for (int i = 0; i <= 9; i++)
         {
             stack.Push($"string{i}");
@@ -117,23 +109,64 @@ public class Queues_9
 
 public class BitArray_10
 {
-   public static void Show()
+    public static void Show()
     {
-        var array1 = new BitArray(new[] { 5 });
-        var array2 = new BitArray(new[] { 5 });
+        // Create two bit arrays of length 8
+        BitArray bitArray1 = new BitArray(8);
+        BitArray bitArray2 = new BitArray(8);
 
-        Console.WriteLine($"Array 1: {ToBinaryString(array1)}");
-        Console.WriteLine($"Array 2: {ToBinaryString(array2)}");
-        Console.WriteLine($"AND Result: {ToBinaryString(new BitArray(array1).And(array2))}");
-        Console.WriteLine($"OR Result: {ToBinaryString(new BitArray(array1).Or(array2))}");
+        // Store the value 5 in each bit array
+        SetBitArrayValue(bitArray1, 5);
+        SetBitArrayValue(bitArray2, 5);
+
+        // Perform AND operation
+        BitArray andResult = BitArrayAnd(bitArray1, bitArray2);
+
+        // Perform OR operation
+        BitArray orResult = BitArrayOr(bitArray1, bitArray2);
+
+        // Print results in reverse order
+        Console.WriteLine("Bit Array 1: " + Reverse(BitArrayToString(bitArray1)));
+        Console.WriteLine("Bit Array 2: " + Reverse(BitArrayToString(bitArray2)));
+        Console.WriteLine("AND Result: " + Reverse(BitArrayToString(andResult)));
+        Console.WriteLine("OR Result: " + Reverse(BitArrayToString(orResult)));
     }
 
-    static string ToBinaryString(BitArray array)
+    static void SetBitArrayValue(BitArray bitArray, int value)
     {
-        var bits = new char[array.Length];
-        for (int i = 0; i < array.Length; i++)
+        for (int i = 0; i < bitArray.Length; i++)
         {
-            bits[i] = array[i] ? '1' : '0';
+            bitArray[i] = (value & (1 << i)) != 0;
+        }
+    }
+
+    static BitArray BitArrayAnd(BitArray a, BitArray b)
+    {
+        BitArray result = new BitArray(a);
+        result.And(b);
+        return result;
+    }
+
+    static BitArray BitArrayOr(BitArray a, BitArray b)
+    {
+        BitArray result = new BitArray(a);
+        result.Or(b);
+        return result;
+    }
+
+    static string Reverse(string input)
+    {
+        char[] charArray = input.ToCharArray();
+        Array.Reverse(charArray);
+        return new string(charArray);
+    }
+
+    static string BitArrayToString(BitArray bitArray)
+    {
+        char[] bits = new char[bitArray.Length];
+        for (int i = 0; i < bitArray.Length; i++)
+        {
+            bits[i] = bitArray[i] ? '1' : '0';
         }
         return new string(bits);
     }
@@ -160,7 +193,7 @@ public class Strings_11
 
 public class StringBuilder_12
 {
-   public static void Show()
+    public static void Show()
     {
         Console.Write("1.Enter a number: ");
         if (int.TryParse(Console.ReadLine(), out int number))
@@ -171,7 +204,7 @@ public class StringBuilder_12
         {
             Console.WriteLine("Invalid input. Please enter a valid integer.");
         }
-        
+
         Console.Write("2.Enter a sentence: ");
         string sentence = Console.ReadLine();
 
@@ -186,12 +219,12 @@ public class StringBuilder_12
             Console.WriteLine("Invalid sentence format.");
         }
     }
-    
+
     static string[] ParseSentence(string sentence) =>
         sentence.Split(' ', StringSplitOptions.RemoveEmptyEntries)
                 .Take(3)
                 .ToArray();
-    
+
     static string NumberToWord(int n)
     {
         if (n < 0 || n > 99)
@@ -217,15 +250,29 @@ public class StringBuilder_12
 
     static string SmallNumberToWord(int n) => n switch
     {
-        1 => "One", 2 => "Two", 3 => "Three", 4 => "Four", 5 => "Five",
-        6 => "Six", 7 => "Seven", 8 => "Eight", 9 => "Nine", 10 => "Ten",
+        1 => "One",
+        2 => "Two",
+        3 => "Three",
+        4 => "Four",
+        5 => "Five",
+        6 => "Six",
+        7 => "Seven",
+        8 => "Eight",
+        9 => "Nine",
+        10 => "Ten",
         _ => "Out of range"
     };
 
     static string TensPlace(int n) => n switch
     {
-        2 => "Twenty", 3 => "Thirty", 4 => "Forty", 5 => "Fifty",
-        6 => "Sixty", 7 => "Seventy", 8 => "Eighty", 9 => "Ninety",
+        2 => "Twenty",
+        3 => "Thirty",
+        4 => "Forty",
+        5 => "Fifty",
+        6 => "Sixty",
+        7 => "Seventy",
+        8 => "Eighty",
+        9 => "Ninety",
         _ => "Out of range"
     };
 
@@ -258,8 +305,8 @@ public class Hashing_and_HashTable_13
                 Console.WriteLine($"- {word}");
             }
         }
-        
-        
+
+
     }
 
 }
@@ -268,25 +315,18 @@ public class LinkedLists_14
 {
     public static void Show()
     {
-    
+        LinkedList<int> list1 = new LinkedList<int>(new[] { 1, 2, 3 });
+        LinkedList<int> list2 = new LinkedList<int>(new[] { 4, 5, 6 });
+
+        Console.WriteLine("List 1: " + string.Join(" ", list1));
+        Console.WriteLine("List 2: " + string.Join(" ", list2));
+
+        LinkedList<int> circularList = new LinkedList<int>(list1);
+        circularList.Last.Value = circularList.First.Value;
+
+        Console.WriteLine("Circular List: " + string.Join(" ", circularList));
+        Console.WriteLine("Empty List: " + string.Join(" ", new LinkedList<int>()));
     }
 
 }
 
-public class LinkedLists_15
-{
-    public static void Show()
-    {
-
-    }
-
-}
-
-public class Circularly_LinkedList_16
-{
-    public static void Show()
-    {
-
-    }
-
-}
