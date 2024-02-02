@@ -7,40 +7,70 @@
 </head>
 <body>
     <div class="main">
-        <div class="header">
-            <div class="shapka">
-                <div class="logo" style="padding:0px">
-                    <a href="index.html"><img src="img/girl-blowing-into-palm-silhouette.png" alt=""></a>
-                </div>
-                <div class="euphoria">
-                    <h1><a href="index.html">Euphoria's addict</a></h1>
-                </div>
-                <div class="characters">
-                    <h1><a href="characters.html">Characters</a></h1>
-                </div>
+    <div class="header">
+        <div class="shapka">
+            <div class="logo" style="padding:0px">
+                <a href="index.html"><img src="img/girl-blowing-into-palm-silhouette.png" alt=""></a>
+            </div>
+            <div class="euphoria">
+                <h1><a href="index.html">Tiny bunny</a></h1>
+            </div>
+            <div class="characters">
+                <h1><a href="characters.html">Characters</a></h1>
+            </div>
         </div>
-        
-    
-    
-        </div>
+    </div>
     <br><br>
-    <div class="content">
-       <div class="choose">
-        <h1>Main characters</h1>
-            <button>"A girl"</button>
-            <button>Sam</button>
-            <button>Victoria</button>
-       </div>
-       <div class="character-info">
-        <img src="" alt="">
-        <p></p>
-       </div>
+
+    <div class="content-characters">
+       <div class="wrap">
+            <div class="char" onclick="getBio()" name="">
+                <img src="https://static.wikia.nocookie.net/tiny-bunny/images/0/08/AntonIcon.jpg/revision/latest/scale-to-width-down/185?cb=20230703165821" alt="">
+                <p>Name:  Anton</p>
+                <p>Age: </p>
+                <p>Hobby: </p>
+            </div>
+            <div class="char" onclick="getBio()">
+                <img src="https://static.wikia.nocookie.net/tiny-bunny/images/5/5b/OlyaIcon.jpg/revision/latest/scale-to-width-down/185?cb=20230703165820" alt="">
+                <p>Name:  Olya</p>
+                <p>Age: </p>
+                <p>Hobby: </p>
+            </div>
+        </div>
+        <div class="wrap">
+            <div class="char" onclick="getBio()">
+                <img src="https://static.wikia.nocookie.net/tiny-bunny/images/4/42/PolinaIcon.jpg/revision/latest/scale-to-width-down/185?cb=20230703165817" alt="">
+                <p>Name:  Polina</p>
+                <p>Age: </p>
+                <p>Hobby: </p>
+            </div>
+            <div class="char" onclick="getBio()">
+                <img src="https://static.wikia.nocookie.net/tiny-bunny/images/9/9a/KatyaIcon.jpg/revision/latest/scale-to-width-down/185?cb=20230703165813" alt="">
+                <p>Name:  Katya</p>
+                <p>Age: </p>
+                <p>Hobby: </p>
+            </div>
+        </div>
+       
+        
        
     </div>
-
+    <div class="biography">
+        <p></p>
+    </div>
     <div class="footer">
-      
+        
     </div>
 </div>
 </body>
+<script>
+    var divBio = document.querySelector(".biography p");
+    var divChar = document.querySelectorAll(".char");
+
+
+
+    function getBio(){
+        
+    }
+</script>
 </html>
