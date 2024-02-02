@@ -3,8 +3,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: antiquewhite;
-   
+    background-image: linear-gradient(to bottom, white, black);
 }
 *{
     font-family: "Caveat", cursive;
@@ -25,7 +24,7 @@ a {
     text-align: center;
 }
 .header{
-    background-color:rgb(255, 216, 162);
+    
     font-size: 40px;
 }
 .logo {
@@ -63,12 +62,40 @@ a {
     justify-content: space-around;
     align-items:center;
     font-size: 30px;
+    
 }
 .content-img img{
     width: 700px;
     height: 500px;
     box-shadow: 50px 10px 10px black;
 }
+
+.content-characters{
+    font-size:30px;
+    display:flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.char:nth-child(1){
+    padding-bottom: 70px;
+}
+
+.char img{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+.biography{
+    display: flex;
+    flex-direction: center;
+}
+
+
+
+
 
 
 
