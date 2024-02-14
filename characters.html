@@ -10,7 +10,7 @@
     <div class="header">
         <div class="shapka">
             <div class="logo" style="padding:0px">
-                <a href="index.html"><img src="img/girl-blowing-into-palm-silhouette.png" alt=""></a>
+                <a href="index.html"><img src="img/free-icon-rabbit-697240.png" alt=""></a>
             </div>
             <div class="euphoria">
                 <h1><a href="index.html">Tiny bunny</a></h1>
@@ -24,31 +24,31 @@
 
     <div class="content-characters">
        <div class="wrap">
-            <div class="char" onclick="getBio()" name="">
+            <div class="char" onclick="anton()" name="anton">
                 <img src="https://static.wikia.nocookie.net/tiny-bunny/images/0/08/AntonIcon.jpg/revision/latest/scale-to-width-down/185?cb=20230703165821" alt="">
                 <p>Name:  Anton</p>
-                <p>Age: </p>
-                <p>Hobby: </p>
+                <p>Age: 12</p>
+             
             </div>
-            <div class="char" onclick="getBio()">
+            <div class="char" onclick="olya()">
                 <img src="https://static.wikia.nocookie.net/tiny-bunny/images/5/5b/OlyaIcon.jpg/revision/latest/scale-to-width-down/185?cb=20230703165820" alt="">
                 <p>Name:  Olya</p>
-                <p>Age: </p>
-                <p>Hobby: </p>
+                <p>Age: 6</p>
+                
             </div>
         </div>
-        <div class="wrap">
-            <div class="char" onclick="getBio()">
+        <div class="char">
+            <div class="polina" onclick="polina()">
                 <img src="https://static.wikia.nocookie.net/tiny-bunny/images/4/42/PolinaIcon.jpg/revision/latest/scale-to-width-down/185?cb=20230703165817" alt="">
                 <p>Name:  Polina</p>
-                <p>Age: </p>
-                <p>Hobby: </p>
+                <p>Age: 12</p>
+              
             </div>
-            <div class="char" onclick="getBio()">
+            <div class="char" onclick="katya()">
                 <img src="https://static.wikia.nocookie.net/tiny-bunny/images/9/9a/KatyaIcon.jpg/revision/latest/scale-to-width-down/185?cb=20230703165813" alt="">
                 <p>Name:  Katya</p>
-                <p>Age: </p>
-                <p>Hobby: </p>
+                <p>Age: 12</p>
+               
             </div>
         </div>
        
@@ -56,7 +56,7 @@
        
     </div>
     <div class="biography">
-        <p></p>
+       
     </div>
     <div class="footer">
         
@@ -64,13 +64,63 @@
 </div>
 </body>
 <script>
-    var divBio = document.querySelector(".biography p");
+    var divBio = document.querySelector(".biography");
     var divChar = document.querySelectorAll(".char");
 
 
 
-    function getBio(){
-        
+    function anton(){
+        divBio.innerHTML = `
+    
+        <h1>Anton's bio:</h1> 
+        <p>The game's protagonist, Anton, is a quiet and shy individual of average height. He heavily relies on his glasses as his vision is significantly impaired without them. Recently, his family has relocated to the village, leaving him without any friends in the area. Anton finds solace in reading books and has a passion for drawing. However, he never openly admits to enjoying kids' cartoons, which he secretly watches with his younger sister.
+
+The windows of Anton's bedroom overlook the serene and mysterious forest, which occasionally becomes a source of unease for him. He sometimes contemplates whether this proximity to the forest is the root of his troubles. Unfortunately, Anton is an easy target for bullies due to his introverted nature, but he has developed the resilience to stand up for himself when necessary.
+
+On one of the game's paths, Anton becomes a member of the Gopniks band, which leads to him forming a close friendship with Roma and Byasha. Conversely, Anton's enemies in the game are Semyon and Katya. However, in the official manga adaptation, it is revealed that Katya has a romantic interest in Anton, adding a layer of complexity to their relationship. Anton's primary love interest, however, is Polina, although there are suspicions of a potential attraction between him and Alice.
+
+Anton is taking pills each morning, which happens to be “vitamins” but could be pills for any mental ill problems and hallucinations, but that’s only a theory.
+
+As an avid collector, Anton amasses a collection of cards featuring the "Turbo" car cards, which can be obtained by purchasing "Turbo" gum. The first encounter with these gums occurs when Alice offers Anton candies one school morning.
+
+Depending on the game path chosen, Anton's personality undergoes changes that reflect the player's decisions and actions.</p>
+`;
+    }
+    function olya(){
+        divBio.innerHTML = `
+    
+        <h1>Olya's bio:</h1> 
+        <p>Olya, Anton's 6-year-old sister, is an endearing and inquisitive child eagerly anticipating her upcoming first year of school. Having never attended kindergarten, she has had limited interactions with other children her age. Throughout her life, Anton has been her unwavering best friend and role model, and she looks up to him with admiration.
+
+Olya has a fondness for sweets and finds great joy in indulging in them. She shares delightful moments with her brother, watching TV together and listening to impromptu stories. However, the stories they enjoy are never taken from books; instead, they are crafted on the spot, weaving imaginative tales with happy endings. The spontaneity adds an extra layer of excitement and wonder to their shared experiences.
+
+Despite her playful nature, Olya harbors a fear of sleeping alone in her own room. Seeking comfort and security, she prefers the reassurance of being close to Anton during bedtime. Alongside their movie marathons, she relishes the simple pleasure of enjoying snacks with her brother. Their shared tradition of rewatching their favorite movies brings them both joy, finding comfort in the familiarity of the stories they love.</p>
+`;
+    }
+    function polina(){
+        divBio.innerHTML = `
+    
+        <h1>Polina's bio:</h1> 
+        <p>Polina, a 12-year-old classmate of Anton, possesses a remarkable talent and passion for the violin. Motivated by her late mother, who was a skilled violinist, Polina has dedicated herself to mastering the instrument. She aspires to follow in her mother's footsteps, carrying on the musical legacy that was left behind.
+
+Currently, Polina lives with her paralyzed grandfather, who was tragically attacked by a pack of wild dogs. Taking on a role of caretaker, Polina attends to her grandfather's needs with compassion and devotion. Despite the challenges she faces, her determination and love for her family inspire her to provide the best care possible.
+
+In her free time, Polina indulges in her extensive collection of video tapes, encompassing a wide range of genres. Among them, she possesses numerous horror movies that pique her interest. However, her collection is not limited to just horror; she also enjoys watching Sailor Moon, captivated by the enchanting tales of friendship and adventure.
+
+Polina's cherished companion is her beloved yet quite aggressive cat named Djona. Despite Djona's temperamental nature, Polina loves her fiercely and has formed a strong bond with her. Polina patiently nurtures their relationship and understands Djona's unique personality, finding joy in their moments of affection and play.
+
+Moreover, Polina possesses a unique ability to sense the presence of impending danger within the village. However, she struggles with whom to confide in or how to express what she perceives in the darkness outside her windows. This mysterious intuition adds an intriguing layer to her character and the story.
+
+Deep within her heart, Polina harbors a secret dream. She yearns for a future where she can escape the confines of the village and venture into a bustling town filled with music and enchanting sounds. In her imagination, she envisions herself surrounded by talented musicians, getting lost in the harmonies and melodies that bring joy to her soul. The thought of this vibrant world outside the village fills her with hope and inspiration, fueling her determination to pursue her musical aspirations and create a life filled with beautiful sounds. She is currently in love with Anton, her classmate.</p>
+`;
+    }
+    function katya(){
+        divBio.innerHTML = `
+    
+        <h1>Katya's bio:</h1> 
+        <p>Katya Smirnova is one of the many characters who appears in the Russian horror visual novel Tiny Bunny.</p>
+        <p>A snitch and a gossip. A teacher's pet and the daughter of Anton's homeroom teacher. Loves manipulating and pitting people against each other, feeding off the ensuing arguments. Behind her back, people call her a devil in the mask of an angel.</p>
+`;
     }
 </script>
 </html>
