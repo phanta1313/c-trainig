@@ -25,7 +25,7 @@ a {
 }
 .header{
     
-    font-size: 40px;
+    font-size: 50px;
 }
 .logo {
     padding: 0px;
@@ -61,7 +61,7 @@ a {
     display: flex;
     justify-content: space-around;
     align-items:center;
-    font-size: 30px;
+    font-size: 40px;
     
 }
 .content-img img{
@@ -71,7 +71,7 @@ a {
 }
 
 .content-characters{
-    font-size:30px;
+    font-size:40px;
     display:flex;
     justify-content: space-around;
     flex-direction: row;
@@ -89,8 +89,12 @@ a {
 }
 
 .biography{
-    display: flex;
-    flex-direction: center;
+
+    text-align: center;
+    color:white;
+    font-size: 40px;
+   
+    
 }
 
 
